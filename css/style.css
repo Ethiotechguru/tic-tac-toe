@@ -1,6 +1,50 @@
-.board{
-  border: black 8px solid;
-  background-color: white;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+#board{
   width: 900px;
   height: 900px;
   display: grid;
@@ -15,18 +59,53 @@
                         "four five six"
                         "one two three";
 }
+.box{
+  margin: 0;
+  background-color: white;
+  border: black solid 2px;
+  text-align: center;
+  font-size: 280px;
+  box-sizing: border-box;
+
+}
 #one{
   grid-area: one;
+  background-color: white;
+  border-left: none;
+  border-bottom: none;
 }
 #two{
   grid-area: two;
+  background-color: white;
+  border-bottom: none;
 }
 #three{
   grid-area: three;
+  border-bottom: none;
+  border-right: none;
 }
 #four{
   grid-area: four;
+  border-left: none;
 }
 #five{
 grid-area: five;
+}
+#six{
+  grid-area: six;
+  border-right: none;
+}
+#seven{
+  grid-area: seven;
+  border-left: none;
+  border-top: none;
+}
+#eight{
+  grid-area: eight;
+  border-top: none;
+}
+#nine{
+  grid-area: nine;
+  border-top: none;
+  border-right: none;
 }
