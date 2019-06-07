@@ -41,7 +41,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+.hidden{
+  display: none;
+}
+.show{
+  display: block;
+}
+p{
+  color: green;
+  font-size: 100px;
+}
 
 
 #board{

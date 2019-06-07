@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
+<div id='show' class="hidden">
   <div id="board">
     <div class="box" id ="one">1</div>
     <div class="box" id="two">2</div>
@@ -19,7 +19,12 @@
     <div class="box" id="eight">8</div>
     <div class="box" id="nine">9</div>
   </div>
-  <button>Play Game</button>
+</div>
+
+  <button id="startbutton" onclick="playGame()">Play Game</button>
+  <button id="resetbutton" onclick="reset()">Restart</button>
+
+  <p id="winertell"></p>
   <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
