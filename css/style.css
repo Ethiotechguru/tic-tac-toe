@@ -24,7 +24,17 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+line-height: 1;
+ width: 100%;
+  /* background-repeat: repeat-y; */
+width: 100%;
+  /* background-size:cover; */
+background: #1e5799; 
+background: -moz-radial-gradient(center, ellipse cover,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); 
+background: -webkit-radial-gradient(center, ellipse cover,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); 
+background: radial-gradient(ellipse at center,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+background-image: url('https://cdn.wallpapersafari.com/61/0/snfxdC.jpg');
 }
 ol, ul {
 	list-style: none;
@@ -48,16 +58,27 @@ table {
   display: block;
 }
 p{
-  color: green;
+  color: rgb(0, 0, 0);
   font-size: 100px;
+  text-shadow: 4px 4px rgb(79, 182, 223);
+  background-color: #7dbae873;
+  text-align: center;
+  margin: 200px auto 0;
+  border-radius: 0 70px 0 70px;
+  -webkit-border-radius: 0 70px 0 70px;
+  -moz-border-radius: 0 70px 0 70px;
+  -ms-border-radius: 0 70px 0 70px;
+  -o-border-radius: 0 70px 0 70px;
+  max-width: 600px;
+  box-shadow: -10px 10px rgb(0, 37, 54);
 }
 
 
 #board{
-  width: 900px;
-  height: 900px;
+  width: 800px;
+  height: 700px;
   display: grid;
-  margin-top: 150px;
+  margin-top: 00px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -73,8 +94,9 @@ p{
   background-color: white;
   border: black solid 2px;
   text-align: center;
-  font-size: 280px;
+  font-size: 230px;
   box-sizing: border-box;
+  color: white;
 
 }
 #one{
@@ -117,4 +139,122 @@ grid-area: five;
   grid-area: nine;
   border-top: none;
   border-right: none;
+}
+button{
+  margin: 200px 700px 0;
+  width:300px;
+  text-align: center;
+  padding: 40px;
+  font-size: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  outline: none;
+  box-shadow: -5px 5px rgb(9, 113, 131);
+}
+
+
+@media only screen and (max-width: 1200px) {
+  #board{
+    width: 600px;
+    height: 600px;
+    display: grid;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.5em;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "seven eight nine"
+                          "four five six"
+                          "one two three";
+}
+.box{
+  margin: 0;
+  background-color: white;
+  border: black solid 2px;
+  text-align: center;
+  font-size: 200px;
+  box-sizing: border-box;
+  color: white;
+
+}
+button{
+  margin: 200px 0 400px 0;
+  box-shadow: -5px 5px rgb(9, 113, 131);
+}
+}
+
+@media only screen and (max-width: 1300px) {
+  button{
+    margin: 200px 500px;
+    box-shadow: -5px 5px rgb(9, 113, 131);
+  }
+  #board{
+    margin-top: 20px;
+  }
+
+}
+@media only screen and (max-width: 1000px) {
+  button{
+    margin: 100px 300px 0;
+    box-shadow: -5px 5px rgb(9, 113, 131);
+  }
+  #board{
+    margin-top: 40px;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+  #board{
+    width: 400px;
+    height: 400px;
+    display: grid;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0.5em;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "seven eight nine"
+                          "four five six"
+                          "one two three";
+}
+.box{
+  margin: 0;
+  background-color: white;
+  border: black solid 2px;
+  text-align: center;
+  font-size: 160px;
+  box-sizing: border-box;
+  color: white;
+
+
+}
+button{
+  margin: 200px 200px;
+  width:300px;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  outline: none;
+  box-shadow: -5px 5px rgb(9, 113, 131);
+}
+}
+@media only screen and (max-width: 600px) {
+  button{
+    margin: 200px 100px;
+  }
+  p{
+    font-size: 50px;
+}
 }
